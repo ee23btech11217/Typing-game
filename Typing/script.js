@@ -64,7 +64,7 @@ typedValueElement.addEventListener('input', () => {
       // end of sentence
       // Display success
       const elapsedTime = new Date().getTime() - startTime;
-      const message = `CONGRATULATIONS! Your speed is ${Math.floor(wordIndex*60000/(elapsedTime))} WPM.`;
+      const message = `CONGRATULATIONS! \nYour speed is ${Math.floor(wordIndex*60000/(elapsedTime))} WPM.`;
       element.style.display = 'none';
       messageElement.innerText = message;
     } else if (typedValue.endsWith(' ') && typedValue.trim() === currentWord) {

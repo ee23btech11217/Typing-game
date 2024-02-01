@@ -1,0 +1,45 @@
+/* styles.css */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minimum width of each column */
+    gap: 20px; /* Adjust the gap between cards */
+    padding: 20px; /* Optional: Add padding to the grid container */
+}
+
+.card {
+    text-decoration: none; /* Remove underline from anchor tags */
+    color: #333; /* Set the text color */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 10px;
+}
+
+.container h4 {
+    margin-top: 0;
+}
+
+.container p {
+    margin-bottom: 0;
+}
+
+.img {
+    max-width: 100%; /* Ensure the image does not exceed its container width */
+    max-height: 100%; /* Set a maximum height for the image */
+    display: block;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px 5px 0 0;
+}
